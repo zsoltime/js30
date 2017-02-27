@@ -10,6 +10,7 @@ import postcss from 'gulp-postcss';
 import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'autoprefixer';
 import { init, reload } from 'browser-sync';
+import eslint from 'gulp-eslint';
 
 const dir = options.has('dir') ? options.get('dir') : null;
 
@@ -63,6 +64,8 @@ gulp.task('build:js', () => (
   gulp.src(sources.js)
     .pipe(plumber())
     .pipe(sourcemaps.init())
+    .pipe(eslint())
+    .pipe(eslint.format())
     .pipe(babel())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(`${dist}/js`))
