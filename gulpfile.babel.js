@@ -1,3 +1,4 @@
+import fs from 'fs';
 import gulp from 'gulp';
 import del from 'del';
 import options from 'gulp-options';
@@ -31,19 +32,28 @@ const sources = {
   ],
   js: `./${dir}/src/js/**/*.js`,
   img: `./${dir}/src/images/**/*.*`,
+  sound: `./${dir}/src/sounds/**/*.*`,
 };
 
 gulp.task('clean', () => del(dist));
 
-gulp.task('copy', () => (
+gulp.task('copy', () => {
   gulp.src(sources.img)
-    .pipe(gulp.dest(`${dist}/images`))
-));
+    .pipe(gulp.dest(`${dist}/images`));
+  gulp.src(sources.sound)
+    .pipe(gulp.dest(`${dist}/sounds`));
+  }
+);
 
 gulp.task('build:html', () => (
   gulp.src(sources.pug)
     .pipe(plumber())
-    .pipe(pug({ pretty: true }))
+    .pipe(pug({
+      pretty: true,
+      data: {
+        data: JSON.parse(fs.readFileSync(`${dir}/src/data.json`, { encoding: 'utf8' }))
+      }
+    }))
     .pipe(gulp.dest(dist))
     .pipe(reload({ stream: true }))
 ));

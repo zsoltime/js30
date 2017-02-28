@@ -1,0 +1,39 @@
+[
+  {
+    "num": 65,
+    "btn": "A",
+    "sound": "kick"
+  }, {
+    "num": 83,
+    "btn": "S",
+    "sound": "snare"
+  }, {
+    "num": 68,
+    "btn": "D",
+    "sound": "boom"
+  }, {
+    "num": 70,
+    "btn": "F",
+    "sound": "tom"
+  }, {
+    "num": 71,
+    "btn": "G",
+    "sound": "tink"
+  }, {
+    "num": 72,
+    "btn": "H",
+    "sound": "clap"
+  }, {
+    "num": 74,
+    "btn": "J",
+    "sound": "hihat"
+  }, {
+    "num": 75,
+    "btn": "K",
+    "sound": "openhat"
+  }, {
+    "num": 76,
+    "btn": "L",
+    "sound": "ride"
+  }
+]

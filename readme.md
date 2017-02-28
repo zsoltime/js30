@@ -2,7 +2,7 @@
 
 I decided to start the [JavaScript 30](https://javascript30.com/) challenge.
 
-- [ ] 01 - JavaScript Drum Kit
+- [x] 01 - JavaScript Drum Kit
 - [ ] 02 - JS and CSS Clock
 - [ ] 03 - CSS Variables
 - [ ] 04 - Array Cardio Day 1

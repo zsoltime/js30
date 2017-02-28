@@ -1,9 +1,19 @@
 extends ../../../common/pug/layout.pug
 block title
-  title (x) - JavaScript 30
+  title (1) JavaScript Drum Kit- JavaScript 30
 block fonts
   link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400',
     rel='stylesheet', type='text/css')
 block content
   .container
-    h1 JavaScript 30 - Day #x
+    header
+      h1 JavaScript Drum Kit
+      h2 JavaScript 30 - Day #1
+    - var keys = locals['data']
+    .keys
+      each key in keys
+        .key(data-key=key.num)
+          kbd #{key.btn}
+          span.sound #{key.sound}
+    each key in keys
+      audio(data-key=key.num, src='sounds/'+key.sound+'.wav')
