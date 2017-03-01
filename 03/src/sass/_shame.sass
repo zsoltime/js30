@@ -1,0 +1,87 @@
+$color-bg: #1a527b
+$color-text: rgba(white, .8)
+
+\:root
+  --base: #17bd9e
+  --spacing: 5px
+  --hue: 5deg
+  --sepia: 10%
+  --contrast: 200%
+
+*
+  box-sizing: inherit
+
+html
+  background-blend-mode: screen
+  background-color: $color-bg
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%)
+
+body
+  align-items: center
+  box-sizing: border-box
+  color: $color-text
+  display: flex
+  flex-direction: column
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif
+  font-weight: 300
+  margin: 0
+  min-height: 100vh
+
+h1, h2
+  font-weight: 300
+  margin: 0 auto 1rem
+  text-align: center
+
+.controls
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 1rem
+  max-width: 80vmin
+  width: 100%
+
+input
+  flex-basis: 60vmin
+
+label
+  flex-basis: 15vmin
+  font-size: .825rem
+  margin-bottom: 1rem
+
+img
+  background-color: var(--base)
+  filter: hue-rotate(var(--hue)) sepia(var(--sepia)) contrast(var(--contrast))
+  padding: var(--spacing)
+  max-width: 100%
+  width: 80vmin
+
+figure
+  position: relative
+  contrast(1.5) brightness(.9)
+
+  &::before,
+  &::after
+    content: ''
+    display: block
+    height: 100%
+    left: 0
+    pointer-events: none
+    position: absolute
+    top: 0
+    width: 100%
+
+  &::before
+    background-image: radial-gradient(circle, var(--base), #3b003b)
+    mix-blend-mode: screen
+    opacity: .7
+    z-index: 2
+
+  &::after
+    background-color: var(--base)
+    mix-blend-mode: screen
+    opacity: .3
+    z-index: 3
+
+.hl
+  color: var(--base)

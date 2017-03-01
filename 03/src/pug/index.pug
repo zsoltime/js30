@@ -1,0 +1,23 @@
+extends ../../../common/pug/layout.pug
+block title
+  title (3) CSS Variables - JavaScript 30
+block fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400',
+    rel='stylesheet', type='text/css')
+block content
+  header
+    h1 Update CSS Variables with JS
+    h2.hl JavaScript 30 - Day #3
+  .controls
+    label(for='spacing') Spacing:
+    input#spacing(type='range', name='spacing', min=1, max=20, value=5, data-sizing='px')
+    label(for='contrast') Contrast:
+    input#contrast(type='range', name='contrast', min=50, max=500, step=1, value=200, data-sizing='%')
+    label(for='sepia') Sepia:
+    input#sepia(type='range', name='sepia', min=0, max=100, step=1, value=10, data-sizing='%')
+    label(for='hue') Hue:
+    input#hue(type='range', name='hue', min=0, max=360, value=5, data-sizing='deg')
+    label(for='base') Base Color:
+    input#base(type='color', name='base', value='#17bd9e')
+  figure
+    img(src='https://source.unsplash.com/W2TqzejmjJw/880x500')
