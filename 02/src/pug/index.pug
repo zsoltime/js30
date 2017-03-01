@@ -1,0 +1,15 @@
+extends ../../../common/pug/layout.pug
+block title
+  title (2) JS + CSS Clock- JavaScript 30
+block fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400',
+    rel='stylesheet', type='text/css')
+block content
+  header
+    h1 JavaScript Clock
+    h2 JavaScript 30 - Day #2
+  .clock
+    .clock__face
+      #hour.clock__hand.clock__hand--hour
+      #min.clock__hand.clock__hand--min
+      #sec.clock__hand.clock__hand--sec
