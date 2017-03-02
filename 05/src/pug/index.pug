@@ -1,0 +1,16 @@
+extends ../../../common/pug/layout.pug
+block title
+  title (5) Flex Panel Gallery - JavaScript 30
+block fonts
+  link(href='https://fonts.googleapis.com/css?family=Satisfy',
+    rel='stylesheet', type='text/css')
+block content
+  header.hidden
+    h1 Flex Panel Gallery
+    h2 JavaScript 30 - Day #5
+  - var panels = locals['data']
+  .panels
+    each panel, index in panels
+      .panel(class='panel-' + (index+1))
+        each word in panel.words
+          p #{word}

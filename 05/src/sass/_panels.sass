@@ -1,0 +1,63 @@
+.panels
+  display: flex
+  height: 100vh
+  overflow: hidden
+
+.panel
+  align-items: center
+  background-color: $color-bg
+  background-size: cover
+  background-position: center
+  box-shadow: 0 0 0 3px rgba(white, .1) inset
+  display: flex
+  flex: 1
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  transition: font-size .5s cubic-bezier(0.5,-0.2, 0.7,-0.1), flex .5s cubic-bezier(0.5,-0.2, 0.7,-0.1), background .2s
+
+  p
+    align-items: center
+    display: flex
+    flex: 1 0 auto
+    font-family: Satisfy, cursive
+    font-size: 1.5rem
+    justify-content: center
+    margin: 0
+    text-shadow: 0 0 4px rgba(black, .7), 0 0 14px rgba(black, .4)
+    transition: transform .4s
+    width: 100%
+
+    &:first-child
+      transform: translateY(-100%)
+
+    &:nth-child(2)
+      font-size: 4rem
+
+    &:last-child
+      transform: translateY(100%)
+
+  &--active
+    & p
+      &:first-child,
+      &:last-child
+        transform: translateY(0)
+
+  &--open
+    flex: 5
+    font-size: 2.5rem
+
+  &-1
+    background-image: url(https://source.unsplash.com/p-I9wV811qk/1500x1500)
+
+  &-2
+    background-image: url(https://source.unsplash.com/3reWf5Rp4jo/1500x1500)
+
+  &-3
+    background-image: url(https://source.unsplash.com/4XhQq9jv0tc/1500x1500)
+
+  &-4
+    background-image: url(https://source.unsplash.com/HxrAN-G0IfI/1500x1500)
+
+  &-5
+    background-image: url(https://source.unsplash.com/jQ_RRJgun3s/1500x1500)
