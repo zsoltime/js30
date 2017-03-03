@@ -1,0 +1,15 @@
+extends ../../../common/pug/layout.pug
+block title
+  title (6) Type Ahead 👀 - JavaScript 30
+block fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans',
+    rel='stylesheet', type='text/css')
+block content
+  .container
+    header
+      h1 Type Ahead
+      h2 JavaScript 30 - Day #6
+    form.search-form
+      input.search(type='search', placeholder='City or State')
+      ul.suggestions
+        li Filter for a city/state

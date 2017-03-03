@@ -1,0 +1,25 @@
+.suggestions
+  margin: 0
+  padding: 0
+  position: relative
+
+  li
+    align-items: center
+    background: rgba(white, .9)
+    border-bottom: 1px solid rgba(black, .1)
+    display: flex
+    justify-content: space-between
+    list-style: none
+    margin: 0
+    padding: .5rem
+    transition: background .2s ease-in-out
+
+    &:nth-child(even)
+      background: rgba(white, .85)
+
+.population
+  color: lighten($color-text-dark, 30%)
+  font-size: .75rem
+
+.hl
+  background: #ffc100
