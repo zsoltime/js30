@@ -1,0 +1,16 @@
+extends ../../../common/pug/layout.pug
+block title
+  title (8) Fun with HTML5 Canvas - JavaScript 30
+block fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Ubuntu+Mono',
+    rel='stylesheet', type='text/css')
+block content
+  .container
+    header
+      h1 Fun with HTML5 Canvas
+      h2 JavaScript 30 - Day #8
+    canvas#draw
+    button#clear Clear Canvas
+    .stats
+      p Current color: #[span#color #e64c4c]
+      p Current line width: #[span#line-width 10.00]px
