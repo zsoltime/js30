@@ -3,15 +3,15 @@
 I decided to start the [JavaScript 30](https://javascript30.com/) challenge.
 
 - [x] 01 - JavaScript Drum Kit
-- [ ] 02 - JS and CSS Clock
-- [ ] 03 - CSS Variables
-- [ ] 04 - Array Cardio Day 1
-- [ ] 05 - Flex Panel Gallery
-- [ ] 06 - Type Ahead
-- [ ] 07 - Array Cardio Day 2
-- [ ] 08 - Fun w/ HTML5 Canvas
-- [ ] 09 - Dev Tools Domination
-- [ ] 10 - Hold Shift and Check Checkboxes
+- [x] 02 - JS and CSS Clock
+- [x] 03 - CSS Variables
+- [x] 04 - Array Cardio Day 1
+- [x] 05 - Flex Panel Gallery
+- [x] 06 - Type Ahead
+- [x] 07 - Array Cardio Day 2
+- [x] 08 - Fun w/ HTML5 Canvas
+- [x] 09 - Dev Tools Domination
+- [x] 10 - Hold Shift and Check Checkboxes
 - [ ] 11 - Custom Video Player
 - [ ] 12 - Key Sequence Detection
 - [ ] 13 - Slide on Scroll
