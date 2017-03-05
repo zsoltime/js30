@@ -1,0 +1,20 @@
+extends ../../../common/pug/layout.pug
+block title
+  title (11) HTML Video Player - JavaScript 30
+block fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400',
+    rel='stylesheet', type='text/css')
+block content
+  header
+    h1 HTML Video Player
+    h2 JavaScript 30 - Day #11
+  .player
+    video.player__video(src='https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164')
+    .player__controls
+      .progress
+        .progress__filled
+      button.player__button.toggle(title='Toggle Play') &#9658;
+      input.player__slider(type='range', name='volume' min=0, max=1, step=0.05, value=1)
+      input.player__slider(type='range', name='playbackRate' min=0.5, max=2, step=0.1, value=1)
+      button.player__button(data-skip=-10) &#8810; 10s
+      button.player__button(data-skip=25) 25s &#8811;
